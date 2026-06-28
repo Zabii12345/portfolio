@@ -485,7 +485,7 @@
     }
 
     .project-visual {
-      height: 220px;
+      height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -501,10 +501,10 @@
       background: var(--surface2);
       padding: 4px;
     }
-    .project-card.featured .project-visual { height: 100%; min-height: 260px; }
+    .project-card.featured .project-visual { height: 100%; min-height: 240px; }
 
     .project-body {
-      padding: 28px;
+      padding: 24px;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -515,27 +515,27 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--accent2);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .project-name {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       color: var(--white);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       letter-spacing: -0.3px;
     }
     .project-desc {
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 16px;
+      line-height: 1.6;
+      margin-bottom: 14px;
       flex: 1;
     }
     .project-meta {
       display: flex;
-      gap: 16px;
-      margin-bottom: 14px;
+      gap: 14px;
+      margin-bottom: 12px;
       font-family: 'Inter', monospace;
       font-size: 11px;
       flex-wrap: wrap;
@@ -551,8 +551,8 @@
     .tag {
       background: var(--surface2);
       color: var(--dim);
-      font-size: 11px;
-      padding: 3px 12px;
+      font-size: 10px;
+      padding: 3px 11px;
       border-radius: 100px;
       font-family: 'Inter', monospace;
       border: 1px solid var(--border);
@@ -695,7 +695,7 @@
       background: var(--surface2);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 14px 8px;
+      padding: 12px 6px;
       text-align: center;
       transition: all 0.2s;
     }
@@ -704,8 +704,20 @@
       background: rgba(79, 142, 247, 0.05);
       transform: translateY(-2px);
     }
-    .tool-icon { font-size: 22px; margin-bottom: 4px; display: block; }
-    .tool-name { font-size: 10px; color: var(--muted); font-family: 'Inter', monospace; letter-spacing: 0.03em; }
+    .tool-item img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 4px;
+    }
+    .tool-name {
+      font-size: 9px;
+      color: var(--muted);
+      font-family: 'Inter', monospace;
+      letter-spacing: 0.03em;
+      display: block;
+    }
 
     .lang-row {
       display: grid;
@@ -920,7 +932,7 @@
       .gigs-grid { grid-template-columns: repeat(2, 1fr); }
       .projects-grid { grid-template-columns: 1fr; }
       .project-card.featured { grid-column: span 1; display: block; }
-      .project-card.featured .project-visual { height: 220px; }
+      .project-card.featured .project-visual { height: 200px; }
     }
     @media (max-width: 900px) {
       nav { padding: 14px 20px; }
@@ -1317,15 +1329,42 @@
       <div>
         <div class="skill-group-title">Tools &amp; Technologies</div>
         <div class="tool-grid">
-          <div class="tool-item"><span class="tool-icon">📱</span><span class="tool-name">Flutter</span></div>
-          <div class="tool-item"><span class="tool-icon">🔥</span><span class="tool-name">Firebase</span></div>
-          <div class="tool-item"><span class="tool-icon">🎨</span><span class="tool-name">Figma</span></div>
-          <div class="tool-item"><span class="tool-icon">🤖</span><span class="tool-name">Android Studio</span></div>
-          <div class="tool-item"><span class="tool-icon">🍎</span><span class="tool-name">Xcode</span></div>
-          <div class="tool-item"><span class="tool-icon">💻</span><span class="tool-name">VS Code</span></div>
-          <div class="tool-item"><span class="tool-icon">🐙</span><span class="tool-name">GitHub</span></div>
-          <div class="tool-item"><span class="tool-icon">🔗</span><span class="tool-name">REST APIs</span></div>
-          <div class="tool-item"><span class="tool-icon">🌐</span><span class="tool-name">Play Store</span></div>
+          <div class="tool-item">
+            <img src="https://thfvnext.bing.com/th/id/OIP.lQMxn6huGV1vQ_hZAQbfLAHaHa?w=162&h=180&c=7&r=0&o=7&cb=thfvnextfalcon3&dpr=1.1&pid=1.7&rm=3" alt="Flutter" />
+            <span class="tool-name">Flutter</span>
+          </div>
+          <div class="tool-item">
+            <img src="https://thfvnext.bing.com/th/id/OIP.T6yt73nl5-83lo0MohH89AHaHa?w=194&h=194&c=7&r=0&o=7&cb=thfvnextfalcon3&dpr=1.1&pid=1.7&rm=3" alt="Firebase" />
+            <span class="tool-name">Firebase</span>
+          </div>
+          <div class="tool-item">
+            <img src="data:image/webp;base64,UklGRngFAABXRUJQVlA4IGwFAABQJQCdASrHAMcAPp1OoEwlpKMiJtVYiLATiWNu4WsA+daf7T+Ld3hmjtf5c/zvpAuK+8GUD9IGOX/D+y77nfVR6THmA/aL9t/ek9En+K9QD/HdRr6DXS0fublITLvM8+RORPVeBukaZp3ew6RJCkJLQqYbP3nMM/ZifFJ7/n5mVG5FbVloC8iT6UElitOWKrcaS5QSWSfUDMIzrgnzHYhKZVZKsauBMxYYzfFYcyi42h3BP/82Em+tnwoELf/o/ZhxAzjujN2y34d5OfJyvd7m7mcdwJRUYEmg5EQtUx2WgQH+K/a05VKfossviSOQvevXLnd9DNctR6SEd7H/Akvh6x4DxQqXz3y+TGTA6qPYOA/uGlCEA75UFxp0lrcEyqNlknwsqs2nTv1QqYdloVMOyyAAAP79yJACO3LKu+qhk+xjUAqzTTO6IOekNWeh9h9BLKJ+8uWSdAUEBRQFNfbeMQLsIOD/mNPsvkgn+umABEUpYKs69f7JNbgXS1lnzpK0BnJPYveoGOAFv0aNUhtg8/4Pu8EHknaeIazpPJInmgkuD9qLFhFWE6ytthsq0jZrS5BWk4jjIUiFLxYYbSSsrPrB5f1OwhTicAo6oLmmlwAijXXnH6tg8rk5B53dRufa8ZkCY4Kij6ux1Z+2NlDM6CglsTq95r+PrAZzlCkNE8E+3LQD+ydcqHDRYeEHMRVQPmN+Pvf8f8n7JzDjcfqjqKlDAICodhnMBxCSQxGGZ5v/Xrvjwou/Md+YY7ZGUU8SRLfZ9iE3S3wzGu6zOV4np3Bf/EvVuOHbdjnRBOvAd4gdv+9iMHXr8fT6qFPnd+ppBjf+LaSBFIFJenNhz3EhrBjDD36RAsQjoHWLNTXhBYCBuZq/hLofpw1mXQUpupDPDsGQIIjhKqMJv8VsR1KNPqoiuoH12mSi1YEuRWlM7tazGBL8dWP2sxo74LRYkiiw/sbb5lpzRd1zBFTe4g33oEP2ckZAGYRncMj1ieZkuVk4BInQVlxaDYkijvj19Mti1s4AKzrV3QGGP2R6AKdp0C2HBMpficnl4yghk1YHxLjW9ywpI2CORiY0sgckQBgBGSI4z3+yapPqlJa6V4Au817KmaC/jZ7qVQ1AWIpUTwdx0o5GKxIDiZ35bUwgCwIHTEBcUQWw6NYRtJJzzbEcMfDB8J8xJ5pd/4TWomz3tRDkEJPjP/Zhx+Rys8g2ikvxkLdDDDBzfaTxTyJvxjHEEhSGC+TsZHFkvOY8TeV8Wr/VskLIs6p8ma/CRu+0VQaeQzImhICHhNwQUL0Tc4ICX43NFV6/FksGxyI68mAH4SlfmadVEXlKLmdIYHewwvg3u6M2sY6u2gojeFnv4tbsADKEYy9LDqAObzK09vGQx8Lc9gs0GUgJDktW8EgPfGLt9BOL3lAPH5plyXTttHFZozmVm836lH0ezD392XqCC+usliI7mlopTkYUa76FXx2Sd16Xz6WIHFnLg4WJr52YpRamanLp5zt1rsI2hv95wMlLwkBfFLz4hUC986R5Wk723Hn4V014PZ/Cxpod00LIeuGrjcnVX2zMEewAU94dFa9kDrpvnyxYx0DEdYQgpfeZ45a0JsJ/MF0wC4AYFOaj+/j4EXFZ+agUkK9rhzSvAHYU8HLh7Mi8aKPn9ef/BY20zq8IW50wyqSK5Kj5QP0Jyo2fDGmGv0Af9Tn26nX7gKOioXIRz6zFkaXywMsthmvsbn43Ma9n67p1zdhNoNJwHgaoa7tmY5qDFXEGjc6ub755B6As2nsNOTi3+OLK/XCJDaCz96BtjbsL5/WsJWTXeWIob3mN6/r1bEs0zbUWCZNILOAAfmAAAAAAAA==" alt="Figma" />
+            <span class="tool-name">Figma</span>
+          </div>
+          <div class="tool-item">
+            <img src="https://thfvnext.bing.com/th/id/OIP.Z44ds2F9OT0033-7-4AHawHaHa?w=195&h=195&c=7&r=0&o=7&cb=thfvnextfalcon3&dpr=1.1&pid=1.7&rm=3" alt="Android Studio" />
+            <span class="tool-name">Android Studio</span>
+          </div>
+          <div class="tool-item">
+            <img src="https://thfvnext.bing.com/th/id/OIP.ngwczVXcY5mJNUUG3pG4UQHaHa?w=160&h=180&c=7&r=0&o=7&cb=thfvnextfalcon3&dpr=1.1&pid=1.7&rm=3" alt="Xcode" />
+            <span class="tool-name">Xcode</span>
+          </div>
+          <div class="tool-item">
+            <img src="https://thfvnext.bing.com/th/id/OIP.ORnlsvc38UKkWSEyDmZjggHaHa?w=186&h=186&c=7&r=0&o=7&cb=thfvnextfalcon3&dpr=1.1&pid=1.7&rm=3" alt="VS Code" />
+            <span class="tool-name">VS Code</span>
+          </div>
+          <div class="tool-item">
+            <img src="https://thfvnext.bing.com/th/id/OIP.NGIDdVP6vw9ue_D-mrEVFQHaHa?w=200&h=200&c=7&r=0&o=7&cb=thfvnextfalcon3&dpr=1.1&pid=1.7&rm=3" alt="GitHub" />
+            <span class="tool-name">GitHub</span>
+          </div>
+          <div class="tool-item">
+            <img src="https://cdn.zappysys.com/blog/wp-content/uploads/2018/06/REST-API-icon.jpg" alt="REST API" />
+            <span class="tool-name">REST APIs</span>
+          </div>
+          <div class="tool-item">
+            <img src="https://thfvnext.bing.com/th/id/OIP.8LeaM8UJ_yM4QPfb3wrecgHaHa?w=184&h=184&c=7&r=0&o=7&cb=thfvnextfalcon3&dpr=1.1&pid=1.7&rm=3" alt="Play Store" />
+            <span class="tool-name">Play Store</span>
+          </div>
         </div>
 
         <div class="skill-group-title" style="margin-top:36px;">Languages</div>
