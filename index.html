@@ -263,18 +263,19 @@
     }
 
     .profile-avatar {
-      width: 76px; height: 76px;
+      width: 76px;
+      height: 76px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 28px;
-      font-weight: 700;
-      color: white;
+      overflow: hidden;
       margin-bottom: 16px;
-      box-shadow: 0 8px 24px rgba(79, 142, 247, 0.25);
+      border: 2px solid rgba(79, 142, 247, 0.3);
+      box-shadow: 0 8px 24px rgba(79, 142, 247, 0.2);
+    }
+    .profile-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .card-name {
@@ -488,7 +489,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 56px;
       position: relative;
       overflow: hidden;
       background: var(--surface2);
@@ -496,8 +496,10 @@
     .project-visual img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       display: block;
+      background: var(--surface2);
+      padding: 4px;
     }
     .project-card.featured .project-visual { height: 100%; min-height: 260px; }
 
@@ -984,7 +986,9 @@
     </div>
 
     <div class="hero-card">
-      <div class="profile-avatar">MZ</div>
+      <div class="profile-avatar">
+        <img src="https://i.ibb.co/4gJFghPc/my-image.jpg" alt="M Zohaib Ahmed" />
+      </div>
       <div class="card-name">M Zohaib Ahmed</div>
       <div class="card-role">flutter.developer · it.specialist</div>
 
@@ -1121,7 +1125,7 @@
       <!-- Booking App -->
       <div class="project-card fade-up">
         <div class="project-visual v3">
-          <img src="https://ibb.co/HJXzM48" alt="Booking & Appointment App" />
+          <img src="https://i.ibb.co/0wQMW2b/image.png" alt="Booking & Appointment App" />
         </div>
         <div class="project-body">
           <div class="project-category">Internship · TechNovean</div>
